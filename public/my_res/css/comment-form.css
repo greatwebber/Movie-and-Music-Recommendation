@@ -1,0 +1,48 @@
+
+  
+
+  .indent {
+    text-indent: 50px;
+  }
+
+  .post_ratings .rating_submit {
+    padding: 8px 30px;
+    display: inline-block;
+    background-color: #039be5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.rating_submit_inner {
+    display: block;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: center;
+}
+.rating_submit_inner .star {
+    display: none;
+}
+.rating_submit_inner label {
+    color: lightgray;
+    display: inline-block;
+    font-size: 60px;
+    margin: 0 -2px;
+    transition: transform .15s ease;
+    cursor: pointer;
+}
+.rating_submit_inner label:hover {
+    transform: scale(1.35, 1.35);
+}
+.rating_submit_inner label:hover,
+.rating_submit_inner label:hover ~ label {
+    color: orange;
+}
+.rating_submit_inner .star:checked ~ label {
+    color: orange;
+}
+.post_ratings .fa {
+    color: #ff9800;
+}
+.post_ratings .fa.light {
+    color: #d3d3d3;
+}
